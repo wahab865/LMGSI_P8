@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TMDB</title>
+    <meta name="description" content="Cerca pel·lícules i descobreix els seus títols a TMDB.">
+    <link rel="icon" href="nc.png" type="image/png">
+    <title>TMDB - Cercador de pel·lícules</title>
 </head>
 <body>
 
@@ -14,7 +16,7 @@
 
         <nav>
             <ul>
-                <li><a href="buscador.html">Buscador</a></li>
+                <li><a href="index.html">Buscador</a></li>
                 <li><a href="contacte.html">Contacte</a></li>
             </ul>
         </nav>
@@ -26,10 +28,17 @@
             <h1>BUSCAR una pel·lícula</h1>
             <p>Milions de títols, un sol cercador.</p>
 
-            <div>
-                <input type="text" placeholder="Cerca una pel·lícula, per exemple: Matrix">
-                <button>Cercar</button>
-            </div>
+            <form method="get" action="https://www.themoviedb.org/search">
+                <label for="pelicula">Nom de la pel·lícula:</label>
+                <input
+                    type="search"
+                    id="pelicula"
+                    name="query"
+                    placeholder="Cerca una pel·lícula, per exemple: Matrix"
+                    required
+                >
+                <button type="submit">Cercar</button>
+            </form>
         </section>
 
         <section>
@@ -37,7 +46,7 @@
 
             <article>
                 <img src="4.jpg.jpg.jpg" alt="Dune: Part Two" height="200">
-                <h3>Dune: Part two</h3>
+                <h3>Dune: Part Two</h3>
                 <p>2024</p>
             </article>
 
@@ -48,8 +57,8 @@
             </article>
 
             <article>
-                <img src="spiderman.jpg.jpg" alt="Spiderman Brand New Day" height="200">
-                <h3>Spiderman Brand new day</h3>
+                <img src="spiderman.jpg.jpg" alt="Spider-Man: Brand New Day" height="200">
+                <h3>Spider-Man: Brand New Day</h3>
                 <p>2026</p>
             </article>
         </section>
@@ -57,10 +66,9 @@
     </main>
 
     <footer>
-        <p>© 2026 The movie database -- Maqueta de disseny</p>
+        <p>© 2026 The Movie Database -- Maqueta de disseny</p>
     </footer>
 
 </body>
 </html>
-
-
+```
