@@ -1,0 +1,159 @@
+
+nav { display: flex; justify-content: space-between; align-items: center; }
+nav ul { display: flex; gap: 32px; }
+.resultats { display: flex; gap: 24px; }
+.targeta { flex: 1; }
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0b3a5e;
+    padding: 15px 30px;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: #01b4e4;
+}
+
+.buscador {
+    background-color: #032541;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.buscador h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0 0 10px;
+}
+
+.buscador p {
+    display: block;
+    color: #cccccc;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+.buscador form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.buscador input {
+    width: 70%;
+    padding: 15px;
+    border: none;
+    background-color: #0b3a5e;
+    color: white;
+    border-radius: 5px 0 0 5px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.buscador button {
+    background-color: #01b4e4;
+    border: none;
+    padding: 15px 25px;
+    font-weight: bold;
+    border-radius: 0 5px 5px 0;
+    font-family: inherit;
+}
+
+.pelicules {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 30px;
+    box-sizing: border-box;
+}
+
+.pelicules h2 {
+    margin-bottom: 25px;
+}
+
+.targeta {
+    background-color: #0b3a5e;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.targeta img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+}
+
+.targeta h3 {
+    color: white;
+    font-size: 14px;
+    padding: 0 12px;
+    margin: 10px 0 5px;
+}
+
+.targeta p {
+    color: #90cea1;
+    padding: 0 12px;
+    margin: 5px 0 15px;
+}
+
+.pelicules article img {
+    max-width: 100%;
+    height: auto;
+}
+
+.pelicules form {
+    max-width: 600px;
+}
+
+.pelicules form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.pelicules form input,
+.pelicules form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.pelicules form button {
+    background-color: #01b4e4;
+    border: none;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #032541;
+    color: white;
+    font-size: 13px;
+    padding: 10px 30px;
+}

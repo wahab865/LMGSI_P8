@@ -1,0 +1,284 @@
+
+/* ===== DISTRIBUCIÓ (codi donat, no el modifiqueu) ===== */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+.resultats {
+    display: flex;
+    gap: 24px;
+}
+
+.targeta {
+    flex: 1;
+}
+
+
+/* ===== ELS VOSTRES ESTILS ===== */
+
+
+/* ESTILS GENERALS */
+
+body {
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/* CAPÇALERA */
+
+header {
+    background-color: #0b3a5e;
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a {
+    color: #b8c9d9;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+nav a:hover {
+    color: #01b4e4;
+}
+
+
+/* BUSCADOR */
+
+.buscador {
+    background-color: #032541;
+    color: white;
+    text-align: center;
+    padding: 45px 30px 50px;
+}
+
+.buscador h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0 0 8px;
+}
+
+.buscador p {
+    color: #a9c1d5;
+    display: block;
+    margin: 0 0 28px;
+}
+
+.buscador form {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+}
+
+/* Ocultem visualment l'etiqueta sense eliminar-la */
+
+.buscador label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.buscador input {
+    width: 70%;
+    flex: 1;
+    min-width: 0;
+    border: none;
+    background-color: #0b3a5e;
+    color: white;
+    padding: 14px 16px;
+    border-radius: 6px 0 0 6px;
+    font-family: inherit;
+}
+
+.buscador input::placeholder {
+    color: #b8c9d9;
+}
+
+.buscador button {
+    background-color: #01b4e4;
+    border: none;
+    color: #032541;
+    font-weight: bold;
+    padding: 14px 22px;
+    border-radius: 0 6px 6px 0;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+
+/* RESULTATS DE PEL·LÍCULES */
+
+.pelicules {
+    padding: 45px 30px 65px;
+}
+
+.pelicules h2 {
+    margin-bottom: 16px;
+}
+
+.targeta {
+    background-color: #0b3a5e;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.targeta img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+    border-radius: 5px 5px 0 0;
+}
+
+.targeta h3 {
+    color: white;
+    font-size: 0.9rem;
+    padding: 0 12px;
+    margin: 12px 0 2px;
+}
+
+.targeta p {
+    color: #90cea1;
+    padding: 0 12px;
+    margin: 0 0 12px;
+}
+
+
+/* PÀGINA DE CONTACTE */
+
+.contacte {
+    display: flex;
+    gap: 40px;
+    padding: 45px 30px 65px;
+    align-items: flex-start;
+}
+
+.perfil {
+    flex: 1;
+    background-color: #0b3a5e;
+    color: white;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+.perfil img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.perfil h2 {
+    font-size: 1.3rem;
+}
+
+.perfil p {
+    line-height: 1.6;
+}
+
+.formulari-contacte {
+    flex: 1;
+}
+
+.formulari-contacte h2 {
+    margin-top: 0;
+}
+
+.formulari-contacte p {
+    margin-bottom: 16px;
+}
+
+.formulari-contacte label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+.formulari-contacte input,
+.formulari-contacte textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-family: inherit;
+}
+
+.formulari-contacte button {
+    background-color: #01b4e4;
+    color: #032541;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 25px;
+    font-family: inherit;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* PEU DE PÀGINA */
+
+footer {
+    background-color: #032541;
+    color: #b8c9d9;
+    font-size: 0.75rem;
+    padding: 15px 30px;
+}
+
+
+/* ADAPTACIÓ A PANTALLES PETITES */
+
+@media (max-width: 650px) {
+
+    .resultats {
+        flex-direction: column;
+    }
+
+    .contacte {
+        flex-direction: column;
+    }
+
+    .buscador form {
+        width: 100%;
+    }
+
+    .pelicules {
+        padding: 30px 20px;
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+}

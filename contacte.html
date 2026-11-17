@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ca">
 <head>
@@ -7,6 +6,12 @@
     <meta name="description" content="Contacta amb nosaltres per enviar consultes o suggeriments sobre TMDB.">
     <link rel="icon" href="nc.png" type="image/png">
     <title>TMDB - Contacte</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estils.css">
 </head>
 <body>
 
@@ -24,18 +29,20 @@
     </header>
 
     <main>
-        <section>
-            <h1>CONTACTA AMB NOSALTRES</h1>
+
+        <section class="buscador">
+            <h1>Contacta amb nosaltres</h1>
             <p>Tens algun dubte o suggeriment? Escriu-nos.</p>
         </section>
 
-        <section>
-            <article>
-                <img src="nc.png" alt="Fotografia de Nom Cognom1 Cognom2" width="100">
+        <section class="pelicules">
 
-                <h2>Nom Cognom1 Cognom2</h2>
+            <article class="perfil">
+                <img src="nc.png" alt="Fotografia de Wahab Abdul Malik Siddique" width="100">
 
-                <p>Alumne/a - Desenvolupament web</p>
+                <h2>Wahab Abdul Malik Siddique</h2>
+
+                <p>Alumne - Desenvolupament web</p>
 
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -44,7 +51,7 @@
                 </p>
             </article>
 
-            <form action="#" method="get">
+            <form class="formulari-contacte" action="#" method="get">
                 <h2>Envia'ns un missatge</h2>
 
                 <p>
@@ -69,11 +76,13 @@
 
                 <button type="submit">Enviar</button>
             </form>
+
         </section>
+
     </main>
 
     <footer>
-        <p>© 2026 The Movie Database -- Maqueta de disseny</p>
+        <p>© 2026 The Movie Database — Maqueta de disseny</p>
     </footer>
 
 </body>

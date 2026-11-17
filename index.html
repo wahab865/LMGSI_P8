@@ -6,6 +6,12 @@
     <meta name="description" content="Cerca pel·lícules i descobreix els seus títols a TMDB.">
     <link rel="icon" href="nc.png" type="image/png">
     <title>TMDB - Cercador de pel·lícules</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/estils.css">
 </head>
 <body>
 
@@ -24,51 +30,54 @@
 
     <main>
 
-        <section>
-            <h1>BUSCAR una pel·lícula</h1>
+        <section class="buscador">
+            <h1>Busca una pel·lícula</h1>
             <p>Milions de títols, un sol cercador.</p>
 
             <form method="get" action="https://www.themoviedb.org/search">
-                <label for="pelicula">Nom de la pel·lícula:</label>
                 <input
                     type="search"
                     id="pelicula"
                     name="query"
-                    placeholder="Cerca una pel·lícula, per exemple: Matrix"
+                    placeholder="Cerca una pel·lícula, per exemple «Dune»..."
+                    aria-label="Nom de la pel·lícula"
                     required
                 >
                 <button type="submit">Cercar</button>
             </form>
         </section>
 
-        <section>
+        <section class="pelicules">
             <h2>Resultats</h2>
 
-            <article>
-                <img src="4.jpg.jpg.jpg" alt="Dune: Part Two" height="200">
-                <h3>Dune: Part Two</h3>
-                <p>2024</p>
-            </article>
+            <div class="resultats">
 
-            <article>
-                <img src="5.jpg" alt="El Senyor dels Anells: Les dues torres" height="200">
-                <h3>El Senyor dels Anells: Les dues torres (The Lord of the Rings: The Two Towers)</h3>
-                <p>2002</p>
-            </article>
+                <article class="targeta">
+                    <img src="4.jpg.jpg.jpg" alt="Dune: Part Two">
+                    <h3>Dune: Part Two</h3>
+                    <p>2024</p>
+                </article>
 
-            <article>
-                <img src="spiderman.jpg.jpg" alt="Spider-Man: Brand New Day" height="200">
-                <h3>Spider-Man: Brand New Day</h3>
-                <p>2026</p>
-            </article>
+                <article class="targeta">
+                    <img src="5.jpg" alt="The Lord of the Rings: The Two Towers">
+                    <h3>The Lord of the Rings: The Two Towers</h3>
+                    <p>2002</p>
+                </article>
+
+                <article class="targeta">
+                    <img src="spiderman.jpg.jpg" alt="Spider-Man: Brand New Day">
+                    <h3>Spider-Man: Brand New Day</h3>
+                    <p>2026</p>
+                </article>
+
+            </div>
         </section>
 
     </main>
 
     <footer>
-        <p>© 2026 The Movie Database -- Maqueta de disseny</p>
+        <p>© 2026 The Movie Database — Maqueta de disseny</p>
     </footer>
 
 </body>
 </html>
-```
